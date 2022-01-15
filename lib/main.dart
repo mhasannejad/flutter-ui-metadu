@@ -4,7 +4,9 @@ import 'package:icon/icon.dart';
 import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:metadu_nftshop/components/ChipItem.dart';
+import 'package:metadu_nftshop/components/ntf_item.dart';
 import 'package:metadu_nftshop/components/text_input_field.dart';
+import 'package:metadu_nftshop/components/user_item.dart';
 import 'package:metadu_nftshop/hoc/Layout.dart';
 
 void main() {
@@ -49,12 +51,11 @@ class _HomeState extends State<Home> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Container(
-            padding: EdgeInsets.only(top: 100, left: 25, right: 25),
             alignment: Alignment.center,
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 20),
+                  padding: EdgeInsets.only(top: 100,bottom: 20),
                   child: AppTextField(
                     onChanged: (text) {},
                     textEditingController: controller,
@@ -64,7 +65,7 @@ class _HomeState extends State<Home> {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  margin: EdgeInsets.symmetric(vertical: 10),
+                  margin: EdgeInsets.symmetric(vertical: 10,horizontal: 25),
                   child: Text(
                     'Top Selling',
                     style: TextStyle(fontSize: 25, color: Colors.black87),
@@ -73,6 +74,7 @@ class _HomeState extends State<Home> {
                 Container(
                   height: 55,
                   margin: EdgeInsets.symmetric(vertical: 20),
+                  padding: EdgeInsets.symmetric(horizontal: 0),
                   width: MediaQuery.of(context).size.width,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
@@ -80,6 +82,49 @@ class _HomeState extends State<Home> {
                       ChipItem(emoji: Emojis.monkeyFace, text: 'ArtWorks'),
                       ChipItem(emoji: Emojis.heartExclamation, text: 'Fonts'),
                       ChipItem(emoji: Emojis.framedPicture, text: 'Images'),
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 270,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      NFTItem(
+                        name: 'MekaVerse',
+                        image: 'assets/images/ezgif-2-374e97b74d.png',
+                      ),
+                      NFTItem(
+                        name: 'MetaHorse',
+                        image: 'assets/images/ezgif-2-3a52cad8de.png',
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  width: MediaQuery.of(context).size.width - 50,
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  child: Row(
+                    children: [
+                      Text(
+                        'TopSellers',
+                        style: TextStyle(fontSize: 25),
+                      ),
+                      Expanded(child: Container()),
+                      Text(
+                        'show more',
+                        style: TextStyle(fontSize: 17),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      UserItem()
                     ],
                   ),
                 )

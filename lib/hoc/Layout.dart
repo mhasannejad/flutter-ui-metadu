@@ -86,7 +86,7 @@ class Layout extends StatelessWidget {
           frostedOpacity: 0.12,
           padding: EdgeInsets.all(8.0),
         ),
-
+        child,
         Positioned(
           top: 50,
           left: 25,
@@ -117,7 +117,7 @@ class Layout extends StatelessWidget {
             ),
           ),
         ),
-        child,
+
 
       ],
     );

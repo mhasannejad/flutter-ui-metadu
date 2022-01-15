@@ -11,6 +11,7 @@ class ChipItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.symmetric(horizontal: 12.5),
       decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
@@ -26,7 +27,7 @@ class ChipItem extends StatelessWidget {
         children: [Text('$emoji $text',style: TextStyle(fontSize: 20),)],
       ),
       height: 35,
-      margin: EdgeInsets.symmetric(vertical: 5 , horizontal: 5),
+      margin: EdgeInsets.symmetric(vertical: 5 , horizontal: 12.5),
       width: MediaQuery.of(context).size.width / 2.5,
     );
   }
