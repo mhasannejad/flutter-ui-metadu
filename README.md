@@ -1,16 +1,19 @@
 # metadu_nftshop
 
-NFT Shop
+NFT Shop AKA Metadu
 
-## Getting Started
+- [check out my dribble page](https://dribbble.com/shots/17174375-MetaDu-NFT-marketplace-that-generates-love?utm_source=Clipboard_Shot&utm_campaign=m_hasannejad&utm_content=MetaDu%20%2C%20NFT%20marketplace%20that%20generates%20love&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=m_hasannejad&utm_content=MetaDu%20%2C%20NFT%20marketplace%20that%20generates%20love&utm_medium=Social_Share)
 
-This project is a starting point for a Flutter application.
+- [check out my instagram page too](https://www.instagram.com/dr_geek_dev/)
 
-A few resources to get you started if this is your first Flutter project:
+## home page
+![first](https://github.com/mhasannejad/flutter-ui-metadu/raw/master/assets/images/01.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## nft page
+![second](https://github.com/mhasannejad/flutter-ui-metadu/raw/master/assets/images/02.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## user profile page
+![third](https://github.com/mhasannejad/flutter-ui-metadu/raw/master/assets/images/03.png)
+
+
+all designed and developed by my self , actually this is my first github public repo , i will be adding more and more 
