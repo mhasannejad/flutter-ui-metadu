@@ -61,16 +61,16 @@ class AppTextField extends StatelessWidget {
         child: TextField(
           onChanged: onChanged,
           keyboardType: keyboardType,
+          autofocus: false,
           controller: textEditingController,
-          style: TextStyle(
-              fontSize: 20,
-              color: Colors.black87
-          ),
+          style: TextStyle(fontSize: 20, color: Colors.black87),
           decoration: InputDecoration(
-            icon: Icon(icon, color: Colors.black87.withOpacity(0.7),),
+            icon: Icon(
+              icon,
+              color: Colors.black87.withOpacity(0.7),
+            ),
             contentPadding: EdgeInsets.only(bottom: 5),
             hintText: hintText,
-
             hintStyle: TextStyle(
                 fontSize: 20,
                 color: Colors.black87
